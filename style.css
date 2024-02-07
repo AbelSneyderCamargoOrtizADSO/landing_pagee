@@ -13,8 +13,9 @@ header{
   background-color: var(--bg-nav);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 60px;
+  padding: 0 360px 0 360px ;
 }
 
 .header__logo{
