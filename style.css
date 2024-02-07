@@ -91,6 +91,7 @@ body{
   padding: var(--pd-container);
   gap: 30px;
   text-align: center;
+  justify-content: center;
 }
 
 .sobrenoso__title{
@@ -288,4 +289,13 @@ body{
   font-size: var(--size--title);
   color: var(--bg-azul);
   text-decoration: none;
+}
+
+
+@media (max-width: 1000px){
+  :root{
+    --pd-container: 0px 0px 0px 0px ;
+  }
+
+
 }
