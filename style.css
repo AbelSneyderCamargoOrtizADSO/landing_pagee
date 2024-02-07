@@ -1,0 +1,34 @@
+:root{
+  --bg-nav: #02C5D8;
+  --bg-azul: #A3F9FE;
+  --font-color: #053E42;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header{
+  background-color: var(--bg-nav);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+}
+
+.header__logo{
+  width: 35px;
+}
+
+.header__list{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.header__link{
+  text-decoration: none;
+  color: var(--font-color);
+}
