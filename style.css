@@ -507,9 +507,10 @@ header{
     --size--text: 11px;
     --size--subtitle: 16px;
     --wd-img: 80%;
-    --wd-imgmini: 150px;
+    --wd-imgmini: 90%;
     --wd-imgmini2: 110px;
     --pd-container2: 50px 0;
+    --line-hgt: 18px;
   }
 
   /*  MENU  */
@@ -548,6 +549,18 @@ header{
 
   .porque__card{
     max-width: auto;
+  }
+
+  .planes__content{
+    max-width: 100%;
+  }
+
+  .planes__card{
+    max-width: 60%;
+  }
+
+  .card__img, .planes__img{
+    max-width: 80px;
   }
 
   .descar__content{
