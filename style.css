@@ -1,0 +1,43 @@
+:root{
+  --bg-nav: #02C5D8;
+  --bg-azul: #A3F9FE;
+  --font-color: #053E42;
+  --max-width: 1150px;
+  --wrap: nowrap;
+}
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header{
+  width: 100%;  
+  background-color: var(--bg-nav);
+}
+
+.header__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  flex-wrap: var(--wrap);
+}
+
+.header__logo{
+  width: 35px;
+}
+
+.header__list{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.header__link{
+  text-decoration: none;
+  color: var(--font-color);
+}
