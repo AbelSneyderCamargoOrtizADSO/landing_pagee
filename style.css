@@ -32,6 +32,38 @@ body{
   font-family: sans-serif;
 }
 
+/*  MENU  */
+header{
+  width: 100%;  
+  background-color: var(--bg-nav);
+}
+
+.header__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  flex-wrap: var(--wrap);
+}
+
+.header__logo{
+  width: 35px;
+}
+
+.header__list{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.header__link{
+  text-decoration: none;
+  color: var(--font-color);
+}
+
 /*  INICIO  */
 .inicio{
   display: flex;
@@ -398,6 +430,17 @@ body{
 
 @media (max-width: 1020px){
 
+  /*  MENU  */
+  .header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__list{
+    gap: 50px;
+  }
+
   .inicio{
     gap: 30px;
     justify-content: center;
@@ -467,6 +510,28 @@ body{
     --wd-imgmini: 150px;
     --wd-imgmini2: 110px;
     --pd-container2: 50px 0;
+  }
+
+  /*  MENU  */
+  header{
+    height: 100px;
+  }
+
+  .header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    gap: 20px;
+    height: 90px;
+  }
+
+  .header__list{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: 900;
   }
 
   .sobrenoso{
