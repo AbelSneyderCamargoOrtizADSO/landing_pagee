@@ -2,6 +2,8 @@
   --bg-nav: #02C5D8;
   --bg-azul: #A3F9FE;
   --font-color: #053E42;
+  --max-width: 1150px;
+  --wrap: nowrap;
 }
 
 body{
@@ -10,12 +12,18 @@ body{
 }
 
 header{
+  width: 100%;  
   background-color: var(--bg-nav);
+}
+
+.header__nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  padding: 0 360px 0 360px ;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  flex-wrap: var(--wrap);
 }
 
 .header__logo{
