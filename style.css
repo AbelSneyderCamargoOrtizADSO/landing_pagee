@@ -6,10 +6,15 @@
   --bg-footer: #073645;
   --font-color: #053E42;
   --size--title: 50px;
+  --size--text: 14px;
   --size--subtitle: 32px;
   --color-title:#14B2BF;
+  --wd-img: 486px;
+  --wd-imgmini: 245px;
+  --wd-imgmini2: 180px;
   --pd-container: 100px 360px 100px 360px ;
-  --size--text: 14px;
+  --pd-container2: 100px 0;
+  --max-width: 1150px;
   --alto-btn: 44px;
   --pd-btn:0 24px;
   --color-btn:#4AF0FB;
@@ -19,6 +24,7 @@
   --pd-card: 16px;
   --card-color: #02C5D8;
   --line-hgt: 28px;
+  --wrap: nowrap;
 }
 
 body{
@@ -29,7 +35,14 @@ body{
 /*  INICIO  */
 .inicio{
   display: flex;
-  padding: var(--pd-container);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--pd-container2);
+  flex-wrap: var(--wrap);
+}
+
+.inicio__img{
+  width: var(--wd-img);
 }
 
 .inicio__titulo{
@@ -60,11 +73,22 @@ body{
 
 /*  INFO  */
 .info{
-  display: flex;
-  padding: var(--pd-container);
+  width: 100%;
   background-color: var(--bg-azul);
+}
+
+.info__img{
+  width: var(--wd-img);
+}
+
+.info__container{
+  display: flex;
   align-items: center;
   gap: 40px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
+  flex-wrap: var(--wrap);
 }
 
 .info__content{
@@ -88,10 +112,21 @@ body{
 /*  SOBRE NOSOTROS  */
 .sobrenoso{
   display: flex;
-  padding: var(--pd-container);
   gap: 30px;
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
+  flex-wrap: var(--wrap);
+}
+
+.sobrenoso__img{
+  width: var(--wd-imgmini);
+}
+
+.sobrenoso__card{
+  max-width: 30%;
 }
 
 .sobrenoso__title{
@@ -107,13 +142,20 @@ body{
 
 /*  TESTI  */
 .testi{
+  width: 100%;
+  background-color: var(--bg-azul);
+}
+
+.testi__container{
   display: grid;
-  padding: var(--pd-container);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   place-items: center;
-  background-color: var(--bg-azul);
   gap: 20px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
+  flex-wrap: var(--wrap);
 }
 
 .testi__card{
@@ -122,7 +164,7 @@ body{
   align-items: center;
   justify-content: center;
   gap: 10px;
-  max-width: 282px;
+  width: 282px;
   background-color: var(--color-white);
   padding: var(--pd-card);
   border-radius: var(--radius-btn);
@@ -137,16 +179,24 @@ body{
 .testi__nombre{
   font-weight: 700;
   color: var(--color-title);
+  text-align: center;
 }
 
 
 /*  POR QUE ELEGIRNOS  */
 .porque{
   display: flex;
-  padding: var(--pd-container);
   gap: 30px;
   text-align: center;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
+  font-size: var(--size--text);
+}
+
+.porque__img{
+  width: var(--wd-imgmini2);
 }
 
 .porque__titulo{
@@ -164,6 +214,11 @@ body{
   gap: 50px;
   justify-content: center;
   align-items: center;
+  flex-wrap: var(--wrap);
+}
+
+.porque__card{
+  max-width: 33%;
 }
 
 
@@ -174,22 +229,25 @@ body{
   align-items: center;
   flex-direction: column;
   background-color: var(--bg-azul);
+  padding: var(--pd-container2);
   gap: 20px;
-  padding: var(--pd-container);
   font-size: var(--size--text);
 }
 
 .planes__title{
   font-size: var(--size--subtitle);
+  margin-top: 0;
 }
 
 .planes__content{
   display: flex;
-  gap: 20px;
+  gap: 55px;
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
   text-align: center;
+  max-width: var(--max-width);
+  flex-wrap: var(--wrap);
 }
 
 .planes__card{
@@ -232,10 +290,12 @@ body{
 /*  DESCARGAR  */
 .descar{
   display: flex;
-  padding: var(--pd-container);
   gap: 30px;
   text-align: center;
   flex-direction: column;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
 }
 
 .descar__title{
@@ -246,6 +306,7 @@ body{
   display: flex;
   justify-content: center;
   gap: 100px;
+  flex-wrap: var(--wrap);
 }
 
 .descar__btn{
@@ -258,12 +319,20 @@ body{
 
 /*  FOOTER  */
 .footer{
+  width: 100%;
   background-color: var(--bg-footer);
-  padding: var(--pd-container);
+}
+
+.footer__container{
   color: var(--color-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: var(--pd-container2);
+  flex-wrap: var(--wrap);
+  font-size: var(--size--text);
 }
 
 .footer__descrip{
@@ -292,10 +361,131 @@ body{
 }
 
 
-@media (max-width: 1000px){
+@media (max-width: 1250px){
   :root{
-    --pd-container: 0px 0px 0px 0px ;
+    --wrap: wrap;
+    --size--title: 35px;
+    --size--text: 14px;
+    --size--subtitle: 22px;
+    --wd-img: 40%;
+    --max-width: 1000px;
   }
 
+  .inicio__content{
+    max-width: 60%;
+  }
 
+  .info__content{
+    max-width: 55%;
+  }
+
+  .sobrenoso{
+    gap: 60px;
+  }
+
+  .sobrenoso__card{
+    max-width: 40%;
+  }
+
+  .porque__card{
+    max-width: 40%;
+  }
+
+  .footer__container{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1020px){
+
+  .inicio{
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .inicio__content{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info__container{
+    justify-content: center;
+  }
+
+  .info__content{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testi__card{
+    max-width: 95%;
+    height: 100%;
+  }
+
+  .testi__container{
+    grid-template-columns: repeat(2, 40%);
+    gap: 30px;
+    row-gap: 50px;
+    place-content: center;
+  }
+
+  .footer__container{
+    gap: 20px;
+  }
+
+  .footerl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footerR{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__descrip{
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px){
+  :root{
+    --wrap: wrap;
+    --size--title: 30px;
+    --size--text: 11px;
+    --size--subtitle: 16px;
+    --wd-img: 80%;
+    --wd-imgmini: 150px;
+    --wd-imgmini2: 110px;
+    --pd-container2: 50px 0;
+  }
+
+  .sobrenoso{
+    gap: 40px;
+  }
+
+  .sobrenoso__card{
+    max-width: 40%;
+  }
+
+  .porque__content{
+    gap: 30px;
+  }
+
+  .porque__card{
+    max-width: auto;
+  }
+
+  .descar__content{
+    gap: 50px;
+  }
 }
